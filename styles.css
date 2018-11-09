@@ -1,0 +1,120 @@
+h2{
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+/* ----------- Stilovi za linkove izbornika na lijevoj strani ----------*/
+.nav li a:focus, .nav li a:hover {
+    text-decoration: none;
+    background-color: #222;
+    border-color: white;
+}
+
+a{
+	color: white;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+	border-left: 10px solid #222;
+}
+
+a:visited{
+	color: white;
+	background-color: #222;
+}
+
+a.active{
+	background-color: #222;
+	color: white;
+	border-color: white;
+}
+
+/* -------- Stilovi za gornji crni header sa naslovom -------- */
+.navbar{
+	border-radius: 0;
+	padding-top: 20px;
+	margin-bottom: 0px;
+}
+
+.navbar-title{
+	font-size: 30px;
+	color: white;
+	margin-left: 50px;
+}
+
+/* -------- Stilovi za lijevi izbornik --------- */
+
+.sidebar{
+	background-color: #222;
+	padding: 0;
+}
+
+#my-location{
+	margin-bottom: 50px;
+}
+
+.sidebar-list{
+	margin-top: 70px;
+	color: white;
+}
+
+.sidebar-list li{
+	margin: 0 0 20px 0;
+	font-size: 20px;
+}
+
+/* -------- Stilovi za glavno tijelo stranice --------- */
+
+#weather-image-container, #weather-conditions-container{
+	display: none;
+}
+.weather-conditions{
+	margin-bottom: 0px;
+}
+.weather-conditions li{
+	font-weight: bold;
+}
+
+.panel-default .panel-heading{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #222;
+	color: white;
+
+}
+
+.panel-body{
+	padding: 0px;
+}
+
+span.current-today-span{
+	font-weight: normal;
+	font-size: 1.2em;
+	float: right;
+	margin-right: 10px;
+}
+
+span.days5-span{
+	font-weight: bold;
+}
+
+span.maxTemp{
+	font-weight: bold;
+	color: red;
+	display: block;
+}
+
+span.minTemp{
+	font-weight: bold;
+	color: blue;
+	display:block;
+}
+
+img.img-5days{
+	margin: 10px 0 10px 0;
+}
+
+.day{
+	margin-top: 20px;
+}

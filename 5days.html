@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js" async></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Weather</title>
+</head>
+
+<body>
+                                      <!-- Gornji navbar sa naslovom -->
+  <div class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <p class="navbar-title"> Current Weather </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <!-- Lijevi izbornik -->
+      <div class="col-md-2 col-sm-3 col-xs-4 sidebar">
+        <ul class="nav text-center sidebar-list">
+          <li><a href="index.html" id="now"> Now </a></li>
+          <li><a href="today.html" id=today> Today </a></li>
+          <li><a class="active" href="5days.html" id="5days"> 5 Days </a></li>
+        </ul>
+      </div>
+
+                                      <!-- Prikaz stranice u sredini -->
+      <div class="col-md-10 col-sm-9 col-xs-8">
+
+        <h2 class="text-center" id="my-location">Your Location: </h2>
+
+        <!-- Podaci o vremenu -->
+        <div class="row" id="site-body">
+
+              <div class="col-md-10 col-md-offset-1" id="weather-conditions-container"> <!-- dodati id weather-conditions-container, provjeri i makni klase na spanovima-->
+                  <div class="panel panel-default">
+                      <div class="panel-heading">Next 5 days</div>
+                      <div class="panel-body">
+                           <div class="row" id="days">
+
+                                <div class="col-md-2 col-md-offset-1 col-sm-8 text-center day" id="day1">
+                                  <span class="days5-span" id=day1name_span>Day 1</span>
+                                  <img class="img-responsive col-xs-12 img-5days" id="day1-weather-icon"></img>
+                                  <span class="maxTemp" id="maxTemp1"></span>
+                                  <span class="minTemp" id="minTemp1"></span>
+                                </div>
+                           
+                                <div class="col-md-2 col-sm-8 text-center day" id="day2">
+                                  <span class="days5-span" id=day2name_span>Day 2</span>
+                                  <img class="img-responsive col-xs-12 img-5days" id="day2-weather-icon"></img>
+                                  <span class="maxTemp" id="maxTemp2"></span>
+                                  <span class="minTemp" id="minTemp2"></span>
+                                </div>
+                            
+                                <div class="col-md-2 col-sm-8 text-center day" id="day3">
+                                  <span class="days5-span" id=day3name_span>Day 3</span>
+                                  <img class="img-responsive col-xs-12 img-5days" id="day3-weather-icon"></img>
+                                  <span class="maxTemp" class="maxTemp" id="maxTemp3"></span>
+                                  <span class="minTemp" id="minTemp3"></span>
+                                </div>
+                            
+                                <div class="col-md-2 col-sm-8 text-center day" id="day4">
+                                  <span class="days5-span" id=day4name_span>Day 4</span>
+                                  <img class="img-responsive col-xs-12 img-5days" id="day4-weather-icon"></img>
+                                  <span class="maxTemp" id="maxTemp4"></span>
+                                  <span class="minTemp" id="minTemp4"></span>
+                                </div>
+                            
+                                <div class="col-md-2 col-sm-8 text-center day" id="day5">
+                                  <span class="days5-span" id=day5name_span>Day 5</span>
+                                  <img class="img-responsive col-xs-12 img-5days" id="day5-weather-icon"></img>
+                                  <span class="maxTemp" id="maxTemp5"></span>
+                                  <span class="minTemp" id="minTemp5"></span>
+                                </div>
+
+                           </div>
+                      </div>
+                  </div>
+
+              </div>
+
+      </div>
+
+    </div>    
+
+  </div>
+
+</body>
+</html>
+
+	

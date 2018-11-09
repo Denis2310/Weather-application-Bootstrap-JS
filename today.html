@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js" async></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Weather</title>
+</head>
+
+<body>
+                                      <!-- Gornji navbar sa naslovom -->
+  <div class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <p class="navbar-title"> Current Weather </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <!-- Lijevi izbornik -->
+      <div class="col-md-2 col-sm-3 col-xs-4 sidebar">
+        <ul class="nav text-center sidebar-list">
+          <li><a href="index.html" id="now"> Now </a></li>
+          <li><a class="active" href="today.html" id=today> Today </a></li>
+          <li><a href="5days.html" id="5days"> 5 Days </a></li>
+        </ul>
+      </div>
+
+                                      <!-- Prikaz stranice u sredini -->
+      <div class="col-md-10 col-sm-9 col-xs-8">
+
+        <h2 class="text-center" id="my-location">Your Location: </h2>
+
+        <div class="row" id="site-body">
+
+          <!-- Slika vremena -->
+          <div class="col-md-5 col-md-offset-1 col-sm-5" id="weather-image-container">
+            <img class="img-responsive col-xs-12" id="today-weather-icon">
+          </div>
+
+          <!-- Podaci o vremenu -->
+          <div class="col-md-6 col-sm-7">
+              <div class="col-md-8 col-md-offset-1 col-sm-7 col-xs-12" id="weather-conditions-container">
+
+                  <div class="panel panel-default">
+                      <div class="panel-heading">Today Weather Prediction</div>
+                      <div class="panel-body">
+                           <ul class="list-group weather-conditions">
+                                <li class="list-group-item">Weather: <span class="current-today-span" id="today_weather"></span></li>
+                                <li class="list-group-item">Max. Temperature: <span class="current-today-span" id="today_max_temperature"></span></li>
+                                <li class="list-group-item">Min. Temperature: <span class="current-today-span" id="today_min_temperature"></span></li>
+                                <li class="list-group-item">Wind: <span class="current-today-span" id="today_wind"></span></li>
+                            </ul>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+      </div>
+
+    </div>    
+
+  </div>
+
+</body>
+</html>
+
+	
